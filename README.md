@@ -1,7 +1,7 @@
 # Exploring Eigenvalues of Random Hermitian Matrices
-This project explores the Eigenvalues of randomly generated Hermitian Matrices using Python.
+In this project I will be exploring the eigenvalues of randomly generated Hermitian Matrices using Python.
 ## Objectives
-- Generate random Hermitian Matrices 
+- Generate random Hermitian matrices 
 - Calculate their eigenvalues
 - Investigate relationships, properties and distribution of the eigenvalues
 - Produce graphs to visualise the results using Matplotlib
@@ -13,7 +13,7 @@ What is the distribution of Eigenvalues for randomly generated 3x3 Hermitian Mat
 I generated 1000 random 3x3 Hermitian Matrices using NumPy. For each matrix, I calculated its three eigenvalues using 'numpy.linalg.eigvalsh()'. This produced 3000 eigenvalues which were collected and displayed using a Histogram. 
 ### Results
 The distribution of the Eigenvalues was centred around zero, with the frequency decreasing towards the more positive and negative eigenvalues.
-The statistics summary was:
+The statistics summary:
 - Standard Deviation: 1.420
 - Mean Eigenvalue: -0.027
 - Minimum Eigenvalue: -3.998
