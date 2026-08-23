@@ -5,12 +5,12 @@ In this project I will be exploring the relationship between the eigenvalues of 
 - Calculate their eigenvalues
 - Investigate relationships, properties and distribution of the eigenvalues
 - Produce figures to visualise the results using Matplotlib
-- Analyse and interpret the Results
+- Analyse and interpret the results
 ## Experiment 1: Distribution of Eigenvalues
 ### Research question
 What does the distribution of eigenvalues look like when we repeatedly generate random matrices?
 ### Method
-I generated 1000 random 3x3 Hermitian Matrices using NumPy. For each matrix, I calculated its three eigenvalues using 'numpy.linalg.eigvalsh()'. This produced 3000 eigenvalues which were collected and displayed using a Histogram. 
+I generated 1000 random 3x3 Hermitian Matrices using NumPy. For each matrix, I calculated its three eigenvalues using 'numpy.linalg.eigvalsh()'. This produced 3000 eigenvalues which were collected and displayed using a Histogram using Matplotlib. 
 ### Results
 The distribution of the eigenvalues was centred around zero, with the frequency decreasing towards the more positive and negative eigenvalues.
 
