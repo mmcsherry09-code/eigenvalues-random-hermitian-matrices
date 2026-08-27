@@ -12,7 +12,7 @@ What does the distribution of eigenvalues look like when we repeatedly generate 
 ### Method
 I generated 1000 random 3x3 Hermitian Matrices using NumPy. For each matrix, I calculated its three eigenvalues using 'numpy.linalg.eigvalsh()'. This produced 3000 eigenvalues which were collected and displayed using a Histogram using Matplotlib. 
 ### Results
-The distribution of the eigenvalues was centred around zero, with the frequency decreasing towards the more positive and negative eigenvalues.
+The distribution of the eigenvalues was centred around zero, with the frequency decreasing towards the more positive and negative eigenvalue ends.
 
 Summary:
 - Standard Deviation: 1.420
@@ -20,7 +20,7 @@ Summary:
 - Minimum Eigenvalue: -3.998
 - Maximum Eigenvalue: 4.134
 ### Interpretation
-The mean eigenvalue -0.027 is close to zero which indicates that the eigenvalues are centred around zero. This is consistent with the random matrix entries being generated around zero. The minimum and maximum eigenvalues show the range over which the eigenvalues occurred, ranging from -3.998 to 4.134. The distribution was approximately symmetric around zero, with there being fewer eigenvalues at the positive and negative ends. Since the matrices are Hermitian, all the eiegnvalues must be real. Therefore, the Histogram provides a way of investigating how real eigenvalues are distributed across many randomly generated matrices. 
+The mean eigenvalue -0.027 is close to zero which indicates that the eigenvalues are centred around zero. This is consistent with the random matrix entries being generated around zero. The minimum and maximum eigenvalues show the range over which the eigenvalues occurred, ranging from -3.998 to 4.134. The distribution was approximately symmetric around zero, with there being fewer eigenvalues at the positive and negative ends. Since the matrices are Hermitian, all the eigenvalues must be real. Therefore, the Histogram provides a way of investigating how real eigenvalues are distributed across many randomly generated matrices. 
 ### Figure 1
 ![Distribution of Eigenvalues](Figure_1.png)
 
@@ -59,6 +59,6 @@ I generated random Hermitian matrices of dimensions 3x3, 5x5, 10x10 and 20x20. F
 ![Mean largest eigenvalue vs matrix dimension](Figure_3_mean_largest.png)
 ![Largest eigenvalue scaling with square root of matrix dimension](Figure_3_sqrt_scaling.png)
 ### Interpretation 
-The results show an increase in the mean largest eigenvalue as matrix dimension increases. The mean largest eigenvalue increased from 1.4173 for 3x3 matrices to 5.3540 for 20x20 matrices. The standard deviation of the largest eigenvalue decreased as the matrix dimension increased, from 0.7878 for 3x3 matrices to 0.5640 for 20x20 matrices. This suggests that the largest eigenvalue became less variable as the matrix dimension increased. The relationship between matrix dimension and mean largest eigenvalue was not exactly linear as increasing the dimension from 10x10 to 20x20 doubled it, but the mean largest eigenvalue increased from 3.7214 to only 5.3540. The mean largest eigenvalue was divided by the square root of the dimension and if the largest eigenvalue was proportionate to $\sqrt{n}$, this ratio would be approximately constant. Instead, the ratio increased from 0.8596 for dimension 3x3 to 1.2825 for dimension 20x20. Therefore, the results do not establish a simple $\sqrt{n}$ relationship. The increase in the ratio is gradual compared with the increase in matrix dimension, the results suggest that the relationship is sub-linear. A larger range of matrix dimension and a greater number of simulation would be required to determine the relationship more reliably.
+The results show an increase in the mean largest eigenvalue as matrix dimension increases. The mean largest eigenvalue increased from 1.4173 for 3x3 matrices to 5.3540 for 20x20 matrices. The standard deviation of the largest eigenvalue decreased as the matrix dimension increased, from 0.7878 for 3x3 matrices to 0.5640 for 20x20 matrices. This suggests that the largest eigenvalue became less variable as the matrix dimension increased. The relationship between matrix dimension and mean largest eigenvalue was not exactly linear as increasing the dimension from 10x10 to 20x20 doubled it, but the mean largest eigenvalue increased from 3.7214 to only 5.3540. The mean largest eigenvalue was divided by the square root of the dimension and if the largest eigenvalue was proportionate to $\sqrt{n}$, this ratio would be approximately constant. Instead the ratio increased from 0.8596 for dimension 3x3 to 1.2825 for dimension 20x20. Therefore, the results do not establish a simple $\sqrt{n}$ relationship. The increase in the ratio is gradual compared with the increase in matrix dimension, the results suggest that the relationship is sub-linear. A larger range of matrix dimension and a greater number of simulations would be required to determine the relationship more reliably.
 
 
