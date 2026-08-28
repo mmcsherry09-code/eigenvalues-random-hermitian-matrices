@@ -66,7 +66,7 @@ We can conclude that increasing the dimension of the random Hermitian matrices c
 ### Research Question 
 Are the largest and smallest eigenvalues of random Hermitian matrices symmetric around zero?
 ### Method
-For each matric dimension (3x3, 5x5, 10x10, 20x20), 1000 random Hermitian matrices were generated. The smallest and largest eigenvalues were recorded for every matrix. I then calculated the mean smallest and mean largest eigenvalues for each matrix dimension. To investigate symmetry around zero, I calculated the quantity $\lambda_{\max}+\lambda_{\min}$. If the largest and smallest eigenvalues are perfectly symmetric around zero, their sum should be equal to zero.
+For each matric dimension (3x3, 5x5, 10x10, 20x20), 1000 random Hermitian matrices were generated. The smallest and largest eigenvalues were recorded for every matrix. I then calculated the mean smallest and mean largest eigenvalues for each matrix dimension. To investigate symmetry around zero, I calculated $\lambda_{\max}+\lambda_{\min}$. If the largest and smallest eigenvalues are perfectly symmetric around zero, their sum should be equal to zero.
 ### Results
 | Matrix Dimension | Mean Smallest Eigenvalue | Mean Largest Eigenvalue | Mean Symmetry |
 |---:|---:|---:|---:|
