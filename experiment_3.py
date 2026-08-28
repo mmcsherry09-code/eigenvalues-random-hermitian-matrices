@@ -22,11 +22,7 @@ for dimension in dimensions:
     mean_largest = np.mean(largest_eigenvalues)
     standard_deviation = np.std(largest_eigenvalues)
 
-    results.append({
-        "dimension": dimension,
-        "mean_largest": mean_largest,
-        "standard_deviation": standard_deviation
-    })
+    results.append({"dimension": dimension, "mean_largest": mean_largest, "standard_deviation": standard_deviation})
 
 print("\nLargest Eigenvalue Results")
 for result in results:
@@ -37,23 +33,12 @@ for result in results:
     dimension = result["dimension"]
     mean_largest = result["mean_largest"]
     ratio = mean_largest / np.sqrt(dimension)
-    print(
-        f"Dimension: {dimension}, "
-        f"Mean largest eigenvalue: {mean_largest:.4f}, "
-        f"Ratio: {ratio:.4f}"
-    )
+    print(f"Dimension: {dimension}, "f"Mean largest eigenvalue: {mean_largest:.4f}, "f"Ratio: {ratio:.4f}")
 
 dimensions_for_plot = [result["dimension"] for result in results]
-mean_largest_values = [
-    result["mean_largest"] for result in results
-]
-
+mean_largest_values = [result["mean_largest"] for result in results]
 plt.figure()
-plt.plot(
-    dimensions_for_plot,
-    mean_largest_values,
-    marker="o"
-)
+plt.plot(dimensions_for_plot, mean_largest_values, marker="o")
 
 plt.xlabel("Matrix Dimension")
 plt.ylabel("Mean Largest Eigenvalue")
@@ -71,11 +56,7 @@ for result in results:
     sqrt_ratios.append(ratio)
 
 plt.figure()
-plt.plot(
-    dimensions_for_plot,
-    sqrt_ratios,
-    marker="o"
-)
+plt.plot(dimensions_for_plot, sqrt_ratios, marker="o")
 plt.xlabel("Matrix Dimension")
 plt.ylabel("Mean Largest Eigenvalue / $\sqrt{n}$")
 plt.title("Largest Eigenvalue Scaling with $\sqrt{n}$")

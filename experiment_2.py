@@ -21,13 +21,7 @@ for dimension in dimensions:
     standard_deviation = np.std(all_eigenvalues)
     minimum = np.min(all_eigenvalues)
     maximum = np.max(all_eigenvalues)
-    results.append({
-        "dimension": dimension,
-        "mean": mean,
-        "standard_deviation": standard_deviation,
-        "minimum": minimum,
-        "maximum": maximum
-    })
+    results.append({"dimension": dimension, "mean": mean, "standard_deviation": standard_deviation, "minimum": minimum, "maximum": maximum})
     plt.figure()
     plt.hist(all_eigenvalues, bins=30, density=True)
     plt.xlabel("Eigenvalue")
@@ -42,16 +36,10 @@ for result in results:
     print(result)
 
 dimensions_for_plot = [result["dimension"] for result in results]
-standard_deviations = [
-    result["standard_deviation"] for result in results
-]
+standard_deviations = [result["standard_deviation"] for result in results]
 
 plt.figure()
-plt.plot(
-    dimensions_for_plot,
-    standard_deviations,
-    marker="o"
-)
+plt.plot(dimensions_for_plot, standard_deviations, marker="o")
 
 plt.xlabel("Matrix Dimension")
 plt.ylabel("Standard Deviation of Eigenvalues")
