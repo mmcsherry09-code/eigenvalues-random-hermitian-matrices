@@ -64,9 +64,9 @@ The results show an increase in the mean largest eigenvalue as matrix dimension 
 We can conclude that increasing the dimension of the random Hermitian matrices caused the mean largest eigenvalue to increase, while the variability of the largest eigenvalue decreased. The relationship was not linear and the $\sqrt{n}$ comparison suggested that there may be a square root relationship but further investigation is required to establish this.
 ## Experiment 4: Symmetry of the Smallest and Largest Eigenvalues
 ### Research Question 
-Are the largest and smallest eigenvalues of random Hermitian matrices symmetric around zero/
+Are the largest and smallest eigenvalues of random Hermitian matrices symmetric around zero?
 ### Method
-For each matric dimension (3x3, 5x5, 10x10, 20x20), 1000 random Hermitian matrices were generated. The smallest and largest eigenvalues were recorded for every matrix. I then calculated the mean smallest and mean largest eigenvalues for each matrix dimension. To investigate symmetry around zero, I calculated the quantity [\lambda_{\max}+\lambda_{\min}]. If the largest and smallest eigenvalues are perfectly symmetric around zero, their sum should be equal to zero.
+For each matric dimension (3x3, 5x5, 10x10, 20x20), 1000 random Hermitian matrices were generated. The smallest and largest eigenvalues were recorded for every matrix. I then calculated the mean smallest and mean largest eigenvalues for each matrix dimension. To investigate symmetry around zero, I calculated the quantity $\lambda_{\max}+\lambda_{\min}$. If the largest and smallest eigenvalues are perfectly symmetric around zero, their sum should be equal to zero.
 ### Results
 | Matrix Dimension | Mean Smallest Eigenvalue | Mean Largest Eigenvalue | Mean Symmetry |
 |---:|---:|---:|---:|
